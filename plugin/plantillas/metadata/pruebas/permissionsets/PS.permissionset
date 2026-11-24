@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description
+  >Usuarios modelo de las pruebas de usuario (solo sandboxes): preautoriza la ECA {{ECA}} (JWT); API Enabled y contraseña sin caducidad para entrar desatendido. Sin permisos de datos.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>{{ETIQUETA}}</label>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>ApiEnabled</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>PasswordNeverExpires</name>
+    </userPermissions>
+</PermissionSet>

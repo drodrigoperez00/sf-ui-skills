@@ -1,0 +1,16 @@
+{
+  "name": "sf-ui-skills",
+  "owner": {
+    "name": "Diego Rodrigo"
+  },
+  "metadata": {
+    "description": "Skills de Claude Code para los equipos Salesforce: pruebas de usuario y documentación con capturas."
+  },
+  "plugins": [
+    {
+      "name": "sf-ui-skills",
+      "source": "./plugin",
+      "description": "Pruebas de usuario y documentación con capturas sobre sandboxes de Salesforce."
+    }
+  ]
+}

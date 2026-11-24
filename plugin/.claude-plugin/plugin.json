@@ -1,0 +1,16 @@
+{
+  "name": "sf-ui-skills",
+  "version": "0.5.0",
+  "description": "Pruebas de usuario y documentación con capturas sobre sandboxes de Salesforce: /probar y /documentar, con sus agentes de navegador. Pautas en .md y una sesión de navegador mínima.",
+  "author": {
+    "name": "Diego Rodrigo"
+  },
+  "license": "UNLICENSED",
+  "keywords": [
+    "salesforce",
+    "lightning",
+    "playwright",
+    "pruebas",
+    "documentacion"
+  ]
+}

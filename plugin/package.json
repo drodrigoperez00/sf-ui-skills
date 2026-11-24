@@ -1,0 +1,13 @@
+{
+  "name": "sf-ui-skills",
+  "version": "0.5.0",
+  "private": true,
+  "description": "Dependencia de la sesión viva del plugin: Playwright.",
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "@playwright/test": "^1.64.0"
+  }
+}

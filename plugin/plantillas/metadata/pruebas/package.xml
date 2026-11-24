@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>{{ECA}}</members>
+        <name>ExternalClientApplication</name>
+    </types>
+    <types>
+        <members>{{ECA}}_glbloauth</members>
+        <name>ExtlClntAppGlobalOauthSettings</name>
+    </types>
+    <types>
+        <members>{{ECA}}_oauth</members>
+        <name>ExtlClntAppOauthSettings</name>
+    </types>
+    <types>
+        <members>{{ECA}}_oauthPlcy</members>
+        <name>ExtlClntAppOauthConfigurablePolicies</name>
+    </types>
+    <types>
+        <members>{{PS}}</members>
+        <name>PermissionSet</name>
+    </types>
+    <version>{{VERSION_API}}</version>
+</Package>
