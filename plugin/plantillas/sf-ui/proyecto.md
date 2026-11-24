@@ -1,4 +1,4 @@
-# Proyecto para /probar y /documentar
+# Proyecto para /probar-tarea y /documentar
 
 Las skills y los agentes de sf-ui-skills leen este fichero entero y lo pasan en cada brief. Es todo lo que tienen
 del proyecto: la configuración y lo que un tester nuevo tendría que saber para no equivocarse. Escríbelo para

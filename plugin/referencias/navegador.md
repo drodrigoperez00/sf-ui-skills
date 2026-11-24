@@ -61,7 +61,7 @@ return await page.getByRole("main").ariaSnapshot();
 - Para pasar un dato a otra sesión, devuélvelo con `return` y escríbelo en el bloque de la otra.
 - **Tras guardar o lanzar una acción, lee los avisos** en el mismo bloque, justo tras el clic (el toast se va solo):
   `page.locator('[role="alert"], [role="alertdialog"], .toastContainer').filter({ visible: true }).allInnerTexts()`,
-  y mira la cabecera de la ficha, no solo el campo. Un error o un rechazo es un resultado (en `/probar`) o una discrepancia (en `/documentar`), aunque
+  y mira la cabecera de la ficha, no solo el campo. Un error o un rechazo es un resultado (en `/probar-tarea`) o una discrepancia (en `/documentar`), aunque
   el valor se haya guardado.
 - **En la consola**, el primer bloque cierra las pestañas que restaura de otras ejecuciones: en la navegación
   «Espacios de trabajo», pulsa los botones con título «Cerrar …» (`getByTitle(/^Cerrar/)`) hasta que no quede
@@ -99,7 +99,7 @@ await captura("<carpeta del brief>/03-guardar.png", {
 ```
 
 - `marcas` son locators, numerados en el orden en que van; `{ locator, n }` fija el número. Se pintan encima de la
-  página y se quitan solas. Sin marcas, es una captura sin más (la evidencia de `/probar`).
+  página y se quitan solas. Sin marcas, es una captura sin más (la evidencia de `/probar-tarea`).
 - Si una marca no se ve en la captura o la tapa otro elemento (un desplegable abierto), `captura` falla:
   desplázala, cierra lo que la tapa, abre lo que la contiene o recorta con `zona`.
   Si no falla, la marca está donde debe: **no abras el PNG para comprobarla**.

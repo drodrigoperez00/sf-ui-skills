@@ -1,7 +1,7 @@
 # Lotes: varios agentes de navegador a la vez
 
 Referencia de las skills que lanzan varios agentes de navegador contra el mismo entorno (`/documentar` hoy, y
-`/probar` en modo masivo cuando llegue). Un agente no puede lanzar a otros: los lotes los lanza la skill.
+`/probar` con un plan de pruebas cuando llegue). Un agente no puede lanzar a otros: los lotes los lanza la skill.
 `<plugin>` es la raíz del plugin.
 
 ## Qué va en cada lote

@@ -1,6 +1,6 @@
 ---
 name: ui-tester
-description: Valida los criterios de una historia de usuario contra un sandbox de Salesforce como un usuario modelo. Explora y valida la UI en una sesión de navegador viva con bloques de código Playwright y saca ahí las capturas de la evidencia. Lo lanza la skill probar con el plan de casos; devuelve un informe con entorno, usuario y resultado por criterio.
+description: Valida los criterios de una historia de usuario contra un sandbox de Salesforce como un usuario modelo. Explora y valida la UI en una sesión de navegador viva con bloques de código Playwright y saca ahí las capturas de la evidencia. Lo lanza la skill probar-tarea con el plan de casos; devuelve un informe con entorno, usuario y resultado por criterio.
 tools: Bash, PowerShell, Read, Write, Edit, Glob, Grep
 model: sonnet
 ---

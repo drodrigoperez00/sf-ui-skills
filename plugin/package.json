@@ -1,6 +1,6 @@
 {
   "name": "sf-ui-skills",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "private": true,
   "description": "Dependencia de la sesión viva del plugin: Playwright.",
   "license": "UNLICENSED",

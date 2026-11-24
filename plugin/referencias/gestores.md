@@ -1,6 +1,6 @@
 # Gestores de issues: leer, etiquetar y subir capturas
 
-Referencia de `/probar`. Cómo leer la HU, ver sus MR o PR, poner la etiqueta de probado y subir las capturas de
+Referencia de `/probar-tarea`. Cómo leer la HU, ver sus MR o PR, poner la etiqueta de probado y subir las capturas de
 la evidencia, sin scripts del plugin: con `glab`, `gh` o `curl`.
 
 ## De dónde sale cada dato
@@ -16,7 +16,7 @@ Todo lo apunta `.sf-ui/proyecto.md`, en su sección «Desarrollo y gestor de iss
 del usuario. **Nunca imprimas el token**: ni `echo`, ni `env`, ni `curl -v`. Si falta, pídeselo al usuario y que lo
 exporte él.
 
-Solo escribe en el gestor (etiqueta, subida) en el cierre de `/probar`. Para explorar, solo lecturas.
+Solo escribe en el gestor (etiqueta, subida) en el cierre de `/probar-tarea`. Para explorar, solo lecturas.
 
 ## GitLab (`glab`)
 

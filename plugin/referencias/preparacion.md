@@ -1,6 +1,6 @@
 # Preparación antes de lanzar agentes de navegador
 
-La siguen `/probar` y `/documentar` antes de lanzar a ningún agente. Si falla un paso, para y di cómo se resuelve:
+La siguen `/probar-tarea` y `/documentar` antes de lanzar a ningún agente. Si falla un paso, para y di cómo se resuelve:
 no lances agentes contra un entorno a medio preparar. `<plugin>` es la raíz del plugin: la ruta que te dio quien te
 remitió aquí.
 

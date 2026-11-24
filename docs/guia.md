@@ -1,11 +1,11 @@
 # Guía de sf-ui-skills para equipos
 
-Para quien quiere usar `/probar` y `/documentar` en su proyecto Salesforce. Lo técnico lo lleva Claude con
+Para quien quiere usar `/probar-tarea` y `/documentar` en su proyecto Salesforce. Lo técnico lo lleva Claude con
 `/configurar`; aquí está lo que te toca a ti y lo que conviene saber antes.
 
 ## Qué hace
 
-- **`/probar <HU>`** prueba una historia de usuario en un sandbox como lo haría un usuario real: entra con un usuario
+- **`/probar-tarea <HU>`** prueba una historia de usuario en un sandbox como lo haría un usuario real: entra con un usuario
   de pruebas de cada rol, recorre los criterios de aceptación por la interfaz y por API, y deja la evidencia con
   capturas en `.sf-ui/resultados/evidencias/<HU>/`.
 - **`/documentar <qué y con qué fuentes>`** genera un manual en Word con capturas marcadas, navegando el sandbox con
@@ -64,12 +64,12 @@ cp ~/sf-skills/plugin/agents/*.md .claude/agents/
 npm install --prefix .claude/sf-ui
 perl -pi -e 's#\$\{CLAUDE_PLUGIN_ROOT\}#.claude/sf-ui#g;
   s#sf-ui-skills:(ui-tester|ui-documentador|ingesta-documentacion|ensamblador-documentacion)#$1#g' \
-  .claude/skills/{probar,documentar,configurar}/SKILL.md \
+  .claude/skills/{probar-tarea,documentar,configurar}/SKILL.md \
   .claude/agents/{ui-tester,ui-documentador,ingesta-documentacion,ensamblador-documentacion}.md
 echo ".claude/sf-ui/node_modules/" >> .gitignore
 ```
 
-Los comandos quedan sin prefijo: `/configurar`, `/probar` y `/documentar`. Donde la guía diga `/sf-ui-skills:…`,
+Los comandos quedan sin prefijo: `/configurar`, `/probar-tarea` y `/documentar`. Donde la guía diga `/sf-ui-skills:…`,
 quítale el prefijo.
 
 ## Configurar el proyecto
@@ -105,8 +105,8 @@ Al terminar, **commitea** `.sf-ui/proyecto.md`, `.sf-ui/lightning.local.js` y el
 ## Uso
 
 ```text
-/sf-ui-skills:probar 205
-/sf-ui-skills:probar docs/hu/alta-cliente.md uat opus
+/sf-ui-skills:probar-tarea 205
+/sf-ui-skills:probar-tarea docs/hu/alta-cliente.md uat opus
 /sf-ui-skills:documentar "manual del rol agente, con el diseño funcional de docs/df.docx"
 ```
 

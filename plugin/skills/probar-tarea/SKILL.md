@@ -1,13 +1,13 @@
 ---
-name: probar
+name: probar-tarea
 description: Valida en un sandbox de Salesforce una historia de usuario o tarea que el desarrollador da por terminada. Reúne el contexto de la HU y del desarrollo, escribe el plan de casos y delega en el agente ui-tester, que prueba como un usuario modelo (JWT, sin login) en una sesión de navegador viva con bloques de Playwright y devuelve el resultado por criterio con capturas de evidencia. La HU puede ser su id en el gestor de issues, un fichero o el texto pegado en la conversación.
 argument-hint: "<HU | fichero> [entorno] [modelo]"
 ---
 
-# /probar: validar una HU como un usuario real
+# /probar-tarea: validar una HU como un usuario real
 
-Invocación: `/probar <HU> [entorno] [modelo]`. Por ejemplo, `/probar 205`, `/probar docs/hu/alta-cliente.md uat`
-o `/probar 205 opus`.
+Invocación: `/probar-tarea <HU> [entorno] [modelo]`. Por ejemplo, `/probar-tarea 205`,
+`/probar-tarea docs/hu/alta-cliente.md uat` o `/probar-tarea 205 opus`.
 
 - **HU**: su id en el gestor, un fichero (md, txt, pdf; un docx, con `pandoc -t markdown <fichero>`), el texto pegado
   o nada (la issue de la rama, si `proyecto.md` dice cómo saberla; si no, pregunta).

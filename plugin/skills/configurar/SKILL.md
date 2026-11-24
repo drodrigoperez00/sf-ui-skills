@@ -1,10 +1,10 @@
 ---
 name: configurar
-description: Configura un proyecto Salesforce para usar /probar y /documentar, o lo repara tras un refresco del sandbox. Asistente por pasos que comprueba las herramientas, elige la org de pruebas (nunca producción), genera el par JWT, despliega la ECA y el permission set, propone los usuarios modelo, detecta las extensiones (chat, correo, Omni-Channel), redacta .sf-ui/proyecto.md con el desarrollador y hace una prueba de humo. Se puede relanzar; retoma donde se quedó.
+description: Configura un proyecto Salesforce para usar /probar-tarea y /documentar, o lo repara tras un refresco del sandbox. Asistente por pasos que comprueba las herramientas, elige la org de pruebas (nunca producción), genera el par JWT, despliega la ECA y el permission set, propone los usuarios modelo, detecta las extensiones (chat, correo, Omni-Channel), redacta .sf-ui/proyecto.md con el desarrollador y hace una prueba de humo. Se puede relanzar; retoma donde se quedó.
 argument-hint: "[entorno]"
 ---
 
-# /configurar: dejar un proyecto listo para /probar y /documentar
+# /configurar: dejar un proyecto listo para /probar-tarea y /documentar
 
 Invocación: `/configurar [entorno]`. Por ejemplo, `/configurar` la primera vez, o `/configurar uat` para añadir un
 entorno o repararlo tras un refresco.
@@ -87,7 +87,7 @@ Con eso, una tabla de roles (rol, perfil o PSG, para qué) y la persona elige. P
 existe, créalo con su confirmación (`sf data create record -s User` con `Username` único, `ProfileId`, `Alias`,
 `LastName`, `Email` del desarrollador, `TimeZoneSidKey`, `LocaleSidKey`, `EmailEncodingKey`, `LanguageLocaleKey` del entorno), o lo crea
 ella en Setup si hace falta una licencia que no ves. Redacta la columna «Cuándo usarlo» con ella: es lo que lee
-`/probar` para elegir rol.
+`/probar-tarea` para elegir rol.
 
 Después, `preparacion.md` §4.5: el permission set y el idioma.
 
@@ -134,4 +134,4 @@ Si todo pasa, dilo y cierra con:
 - **Para el resto del equipo**: clonar, instalar el plugin, recibir la clave por canal seguro y lanzar
   `/configurar`, que solo comprobará.
 - **Tras un refresco del sandbox**: `/configurar <entorno>` otra vez; repara la ECA, la consumer key y los usuarios.
-- **Siguiente**: `/probar <HU>` con una HU sencilla.
+- **Siguiente**: `/probar-tarea <HU>` con una HU sencilla.
